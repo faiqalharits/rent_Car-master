@@ -48,6 +48,7 @@ header {
   background: linear-gradient(to left, #4d4c4c 2%, #000000 86%, #170202 100%);
   color: white;
   font-family: sans-serif;
+  padding-top: 5px;
   /* overflow: hidden; */
 }
 
