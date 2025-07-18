@@ -17,14 +17,19 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="navbar-logo">
                 <img src="/assets/images/logo.png" alt="">
             </div>
             <ul class="navbar-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="armada.html">Armada</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Pages/profile.html">Profile</a></li>
+                <li><a href="/Pages/armada.html">Armada</a></li>
+                <li><a href="/Pages/galeri.html">Galeri</a></li>
             </ul>
             <div class="navbar-button">
                 <a href="https://wa.me/6281298419634?text=Halo%2C%20saya%20ingin%20menyewa%20mobil"
@@ -34,27 +39,61 @@
     </header>
     <section class="header-galeri" data-aos="fade-down" data-aos-duration="1000">
     </section>
-    <section class="galeri">
-        <div class="galeri-container" data-aos="zoom-in" data-aos-duration="1000">
-            <h2>Galeri</h2>
-            <p>Berikut adalah beberapa galeri dari RRGaruda</p>
-            <div class="grid-galeri">
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
-                <div class="grid-item" data-aos="zoom-in" data-aos-duration="1000"></div>
+    <section id="galeri" class="galeri-container">
+        <h2 data-aos="fade-up">Galeri</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Berikut adalah beberapa galeri dari RRGaruda</p>
+        <div class="grid-galeri">
+            <div class="grid-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="/assets/images/galeri/galeri-1.jpg" alt="Galeri 1">
             </div>
-
+            <div class="grid-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="/assets/images/galeri/galeri-2.jpg" alt="Galeri 2">
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="/assets/images/galeri/galeri-3.jpg" alt="Galeri 3">
+            </div>
+            <div class="grid-item" data-aos="zoom-in" data-aos-delay="400">
+                <video src="/assets/images/galeri/video-rental.mp4"></video>
+            </div>
         </div>
     </section>
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup-close" onclick="closePopup()">×</div>
+        <div class="popup-content" id="popupContent"></div>
+    </div>
+
     <script>
         AOS.init();
+
+        const popup = document.getElementById('popup');
+        const popupContent = document.getElementById('popupContent');
+
+        document.querySelectorAll('.grid-item img, .grid-item video').forEach(media => {
+            media.addEventListener('click', () => {
+                const clone = media.cloneNode(true);
+                if (clone.tagName === 'VIDEO') {
+                    clone.setAttribute('controls', true);
+                    clone.setAttribute('autoplay', true);
+                }
+                popupContent.innerHTML = '';
+                popupContent.appendChild(clone);
+                popup.classList.add('active');
+            });
+        });
+
+        function closePopup() {
+            popup.classList.remove('active');
+            popupContent.innerHTML = '';
+        }
+
+        popup.addEventListener('click', function (e) {
+            if (e.target === popup) closePopup();
+        });
     </script>
+    <script src="../Js/script.js"></script>
+    <script src="../Js/data.js"></script>
+
 </body>
 
 </html>
