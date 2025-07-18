@@ -1357,6 +1357,7 @@ a.pesan-btn  {
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
     z-index: 1001;
+    overflow: hidden;
   }
 
   .navbar-menu.active,
