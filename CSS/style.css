@@ -481,7 +481,8 @@ header {
   color: white;
   font-family: 'Arial', sans-serif;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  margin: 0 auto;
 }
 
 .card-top {
