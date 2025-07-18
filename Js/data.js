@@ -113,13 +113,11 @@ function loadArmadaCards(limit) {
   });
 }
 
-// Call this after the DOM is ready
+// Jalankan saat DOM siap
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
+  const isIndex = path === "/" || path.endsWith("index.html");
+  const limit = isIndex ? 3 : armada.length;
 
-  const page = path.split("/").pop();
-
-  const limit = page === "index.html" ? 3 : armada.length;
-
-  loadArmadaCards(limit)
+  loadArmadaCards(limit);
 });
