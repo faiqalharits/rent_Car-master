@@ -1274,8 +1274,10 @@ a.pesan-btn  {
 
 @media screen and (max-width: 900px) {
   .slideShow img {
-    height: 48vh;
+    height: 54vh;
+    padding: 23px 0px 0px 0px;
   }
+
 
   .misi li {
     line-height: 1.5;
@@ -1283,6 +1285,10 @@ a.pesan-btn  {
 }
 
 @media screen and (max-width: 890px) {
+  .slideShow img {
+    height: 54vh;
+  }
+
   .rating-card h1 {
     font-size: 1rem;
   }
@@ -1314,6 +1320,10 @@ a.pesan-btn  {
 }
 
 @media screen and (max-width : 768px) {
+  .slideShow img {
+    height: 43vh;
+  }
+
   .about-container {
     display: grid;
     grid-template-columns: none;
@@ -1428,6 +1438,7 @@ a.pesan-btn  {
 }
 
 @media screen and (max-width:480px) {
+
   .dot {
     width: 10px;
     height: 10px;
@@ -1499,7 +1510,7 @@ a.pesan-btn  {
   }
 
   .slideShow img {
-    height: 30vh;
+    height: 27vh;
   }
 }
 
