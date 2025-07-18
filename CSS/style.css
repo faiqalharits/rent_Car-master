@@ -20,7 +20,8 @@ html {
 }
 
 
-html, body {
+html,
+body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
@@ -52,7 +53,7 @@ header {
 }
 
 .navbar-logo img {
-  height: 35px;
+  height: 40px;
   width: auto;
   transition: transform 0.3s ease;
 }
@@ -128,7 +129,7 @@ header {
 
 .carousel-container {
   position: relative;
-  margin-top: 60px;
+  margin-top: 65px;
   background-color: #000;
   width: 100%;
   background-size: cover;
@@ -569,7 +570,7 @@ iconify-icon {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a.pesan-btn  {
+a.pesan-btn {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -702,76 +703,10 @@ a.pesan-btn  {
   object-fit: contain;
 }
 
-/* Benefits */
-.benefits {
-  padding: 1rem 2%;
-  background: var(--bg-secondary);
-}
-
-.benefits-title {
-  text-align: center;
-  margin-bottom: 4rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.benefits-title h2 {
-  color: black;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 0.5rem;
-}
-
-.benefits-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.benefits-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
-}
-
-.benefits-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-xl);
-}
-
-.benefits-card .icon {
-  width: 60px;
-  height: 60px;
-  background: var(--gradient-primary);
-  border-radius: 15px;
-  /* margin-bottom: 1.5rem; */
-  padding-top: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.benefits-card h2 {
-  color: black;
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-.benefits-card p {
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
 
 /* Benefits Section */
 .benefits {
-  padding: 6rem 5%;
+  padding: 1rem 2%;
   background: var(--bg-secondary);
 }
 
@@ -1150,7 +1085,8 @@ a.pesan-btn  {
 .popup-overlay {
   display: none;
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -1242,6 +1178,16 @@ a.pesan-btn  {
   border-radius: 2px;
 }
 
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
+  }
+}
+
 @media screen and (max-width : 1100px) {
   .btn-armada {
     margin-left: 0px;
@@ -1321,7 +1267,7 @@ a.pesan-btn  {
 
 @media screen and (max-width : 768px) {
   .slideShow img {
-    height: 43vh;
+    height: 45vh;
   }
 
   .about-container {
