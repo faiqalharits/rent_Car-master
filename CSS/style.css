@@ -1412,7 +1412,7 @@ a.pesan-btn  {
   }
 
   .slideShow img {
-    height: 38vh;
+    height: 40vh;
   }
 
   .dot {
@@ -1510,8 +1510,8 @@ a.pesan-btn  {
   }
 
   .slideShow img {
-    margin-top: 1px;
-    height: 27vh;
+    /* margin-top: 1px; */
+    height: 30vh;
   }
 }
 
