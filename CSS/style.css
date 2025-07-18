@@ -446,6 +446,7 @@ header {
   margin: 0 110px;
   text-align: center;
   align-items: center;
+  justify-content: center;
 
 }
 
@@ -1384,6 +1385,9 @@ a.pesan-btn {
 }
 
 @media screen and (max-width:480px) {
+  .list-armada{
+    align-items: center;
+  }
 
   .dot {
     width: 10px;
