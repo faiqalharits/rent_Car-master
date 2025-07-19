@@ -1468,6 +1468,10 @@ a.pesan-btn {
     font-size: 13px;
     width: 120px;
   }
+
+  .footer-copyright p {
+    margin-left: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
