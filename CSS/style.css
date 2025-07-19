@@ -443,7 +443,9 @@ header {
 
 .armada-container {
   /* max-width: 1400px; */
-  margin: 0 5%;
+  /* max-width: 100px; */
+  margin: 0 auto;
+  padding: 0 5%;
   text-align: center;
   align-items: center;
   justify-content: center;
