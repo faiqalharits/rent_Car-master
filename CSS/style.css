@@ -1267,6 +1267,10 @@ a.pesan-btn {
     line-height: 1.2;
   }
 
+  .armada-container {
+    padding: 0 auto;
+  }
+
 }
 
 @media screen and (max-width : 768px) {
@@ -1382,12 +1386,19 @@ a.pesan-btn {
   .rating-card {
     flex: 0 0 48%;
   }
+  .armada-container {
+    padding: 0 auto;
+  }
 }
 
 /* Show 1 card per slide on mobile */
 @media (max-width: 600px) {
   .rating-card {
     flex: 0 0 100%;
+  }
+
+  .armada-container {
+    padding: 0 auto;
   }
 }
 
@@ -1477,6 +1488,10 @@ a.pesan-btn {
 
   .footer-copyright p {
     margin-left: 10px;
+  }
+
+  .armada-container {
+    padding: 0 auto;
   }
 }
 
