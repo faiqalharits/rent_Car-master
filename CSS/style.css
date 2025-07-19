@@ -442,11 +442,11 @@ header {
 }
 
 .armada-container {
-  max-width: 1200px;
-  padding: 0 5%;
-  margin: 0 auto;
-  box-sizing: border-box;
+  max-width: 1400px;
+  /* padding: 0 2%; */
+  margin: 0 110px;
   text-align: center;
+  align-items: center;
 }
 
 .armada-container h1 {
@@ -461,11 +461,12 @@ header {
 }
 
 .list-armada {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 3rem;
   justify-content: center;
-  
 }
 
 .car-card {
@@ -506,7 +507,7 @@ header {
 }
 
 .car-image img {
-  width: 285px;
+  width: 300px;
   height: 160px;
 }
 
@@ -523,7 +524,7 @@ header {
 .features {
   display: flex;
   justify-content: space-around;
-  gap: 56px;
+  gap: 50px;
   margin-top: 10px;
 }
 
@@ -590,7 +591,6 @@ a.pesan-btn {
 .btn-armada {
   margin-top: 20px;
   align-items: center;
-  text-align: center;
 }
 
 .btn-armada a {
