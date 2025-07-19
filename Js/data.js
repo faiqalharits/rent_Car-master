@@ -113,7 +113,7 @@ function loadArmadaCards(limit) {
         </div>
         <div class="price-order">
           <span class="price">Rp.${car.harga},-</span>
-          <a class="pesan-btn" href="https://wa.me/6289684887363?text=Halo%2C%20SELAMAT%20DATANG%20DI%20RRGaruda%0Awww.RRGaruda.com%0AReady%20Unit%20%0A🚘%20${encodeURIComponent(car.name)}%0AMelayani%20Tour%20%26%20Travel%0ATidak%20melayani%20lepas%20kunci
+          <a class="pesan-btn" href="https://wa.me/6289684887363?text=Halo%2C%20SELAMAT%20DATANG%20DI%20RRGaruda%0Awww.RRGaruda.com%0AReady%20Unit%20%0A%0A🚘%20${encodeURIComponent(car.name)}%0A%0AMelayani%20Tour%20%26%20Travel%0ATidak%20melayani%20lepas%20kunci
           " target="_blank">
             Pesan
           </a>
