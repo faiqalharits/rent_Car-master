@@ -1464,6 +1464,10 @@ a.pesan-btn {
     /* margin-top: 1px; */
     height: 30vh;
   }
+  .footer-info .address p {
+    font-size: 13px;
+    width: 120px;
+  }
 }
 
 @media screen and (max-width: 400px) {
