@@ -446,6 +446,7 @@ header {
   padding: 0 5%;
   margin: 0 auto;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .armada-container h1 {
