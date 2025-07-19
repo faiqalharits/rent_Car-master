@@ -1372,6 +1372,10 @@ a.pesan-btn {
   .rating-card {
     width: 40px;
   }
+
+  .armada-container {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 900px) {
