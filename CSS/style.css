@@ -506,8 +506,8 @@ header {
 }
 
 .car-image img {
-  width: 300px;
-  height: 160px;
+  width: auto;
+  height: 165px;
 }
 
 .card-info {
